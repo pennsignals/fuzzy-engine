@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/pennsignals/fuzzy-engine"><img src="https://cdn.rawgit.com/pennsignals/fuzzy-engine/master/assets/title.svg" alt="fuzzy"></a>
+  <a href="https://github.com/pennsignals/fuzzy-engine"><img src="https://cdn.rawgit.com/pennsignals/fuzzy-engine/master/assets/title.svg" width="200" alt="fuzzy"></a>
 </p>
 
 <p align="center">
