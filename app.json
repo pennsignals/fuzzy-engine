@@ -2,5 +2,8 @@
   "name": "fuzzy-engine",
   "description": "A mock Penn Signals HTTP API",
   "repository": "https://github.com/pennsignals/fuzzy-engine",
-  "keywords": ["python", "flask"]
+  "keywords": ["python", "flask"],
+  "env": {
+    "FLASK_APP": "fuzzy"
+  }
 }
