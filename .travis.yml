@@ -1,0 +1,6 @@
+language: python
+install:
+- pip install flake8
+script:
+- nosetests -sv
+- flake8 .
