@@ -1,5 +1,6 @@
 language: python
 install:
+- pip install --requirement requirements.txt
 - pip install flake8
 script:
 - nosetests -sv
