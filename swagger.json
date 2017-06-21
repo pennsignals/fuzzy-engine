@@ -1,0 +1,94 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Spotify Web API",
+    "version": "2.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://desolate-fjord-55589.herokuapp.com"
+    }
+  ],
+  "paths": {
+    "/v1/demographics": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Demographic"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Demographic": {
+        "type": "object",
+        "properties": {
+          "height": {
+            "type": "number"
+          },
+          "weight": {
+            "type": "number"
+          },
+          "dob": {
+            "type": "string"
+          },
+          "admit_source": {
+            "type": "string",
+            "enum": ["EMERGENCY", "ROUTINE", "TRANSFER"]
+          },
+          "admit_type": {
+            "type": "string",
+            "enum": ["Emergency", "Routine elective", "Pregnancy", "Urgent"]
+          },
+          "provider_name": {
+            "type": "string"
+          },
+          "provider_phone_number": {
+            "type": "string"
+          },
+          "hospital": {
+            "type": "string",
+            "enum": ["HUP", "PAH", "PMC"]
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "visit_number": {
+            "type": "integer"
+          },
+          "service": {
+            "type": "string",
+            "enum": ["ORTHOPEDICS", "EMERGENCY DEPARTMENT", "HOSPITALIST", "CARDIOVASCULAR MEDICINE", "OBSTETRICS", "MEDICINE", "ONCOLOGY", "CARDIAC SURGERY", "PULMONARY", "GASTROENTEROLOGY"]
+          },
+          "race": {
+            "type": "string",
+            "enum": ["White", "Black", "Unknown", "Asian", "Hispanic", "Other"]
+          },
+          "gender": {
+            "type": "string",
+            "enum": ["Male", "Female", "Unknown"]
+          },
+          "marital_status": {
+            "type": "string",
+            "enum": ["Single", "Married", "Widowed", "Divorced", "Unknown"]
+          }
+        }
+      }
+    }
+  }
+}
