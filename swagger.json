@@ -50,7 +50,7 @@
           },
           "admit_type": {
             "type": "string",
-            "enum": ["Emergency", "Routine elective", "Pregnancy", "Urgent"]
+            "enum": ["Emergency", "Routine", "Pregnancy", "Urgent"]
           },
           "provider_name": {
             "type": "string"
@@ -73,7 +73,7 @@
           },
           "service": {
             "type": "string",
-            "enum": ["ORTHOPEDICS", "EMERGENCY DEPARTMENT", "HOSPITALIST", "CARDIOVASCULAR MEDICINE", "OBSTETRICS", "MEDICINE", "ONCOLOGY", "CARDIAC SURGERY", "PULMONARY", "GASTROENTEROLOGY"]
+            "enum": ["ORTHOPEDICS", "EMERGENCY_DEPARTMENT", "HOSPITALIST", "CARDIOVASCULAR_MEDICINE", "OBSTETRICS", "MEDICINE", "ONCOLOGY", "CARDIAC_SURGERY", "PULMONARY", "GASTROENTEROLOGY"]
           },
           "race": {
             "type": "string",

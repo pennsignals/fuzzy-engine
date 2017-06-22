@@ -75,7 +75,7 @@ def random_admit_type(sex):
         if rand < 0.54:
             return 'Emergency'
         elif rand < 0.79:
-            return 'Routine elective'
+            return 'Routine'
         elif rand < 0.94:
             return 'Pregnancy'
         elif rand < 0.98:
@@ -86,7 +86,7 @@ def random_admit_type(sex):
         if rand < 0.62:
             return 'Emergency'
         elif rand < 0.93:
-            return 'Routine elective'
+            return 'Routine'
         elif rand < 0.99:
             return 'Urgent'
         else:
@@ -126,11 +126,11 @@ def random_service(admit_type):
         return 'OBSTETRICS'
     rand = uniform(0, 1)
     if rand < 0.34:
-        return 'EMERGENCY DEPARTMENT'
+        return 'EMERGENCY_DEPARTMENT'
     elif rand < 0.49:
         return 'HOSPITALIST'
     elif rand < 0.63:
-        return 'CARDIOVASCULAR MEDICINE'
+        return 'CARDIOVASCULAR_MEDICINE'
     elif rand < 0.7:
         return 'ORTHOPEDICS'
     elif rand < 0.77:
@@ -138,7 +138,7 @@ def random_service(admit_type):
     elif rand < 0.83:
         return 'ONCOLOGY'
     elif rand < 0.89:
-        return 'CARDIAC SURGERY'
+        return 'CARDIAC_SURGERY'
     elif rand < 0.95:
         return 'PULMONARY'
     else:
