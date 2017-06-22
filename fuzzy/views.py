@@ -161,10 +161,8 @@ def random_sex():
     rand = uniform(0, 1)
     if rand < 0.52:
         return 'Female'
-    elif rand < 0.99989:
-        return 'Male'
     else:
-        return 'Unknown'
+        return 'Male'
 
 
 def random_marital_status(admit_type):
