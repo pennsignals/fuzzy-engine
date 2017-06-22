@@ -31,6 +31,14 @@ def random_weight(sex):
     return round(gauss(mu, sigma), 3)
 
 
+def random_dob_no_future(admit_type):
+    d = random_dob(admit_type)
+    while d > datetime.datetime.now():
+        d = random_dob(admit_type)
+
+    return d.isoformat()
+
+
 def random_dob(admit_type):
     """"""
     mu = -2.1e+08
@@ -41,7 +49,7 @@ def random_dob(admit_type):
 
     d = datetime.date.fromtimestamp(gauss(mu, sigma))
     d = datetime.datetime(d.year, d.month, d.day)
-    return d.isoformat()
+    return d
 
 
 def random_admit_source(admit_type):
@@ -161,10 +169,8 @@ def random_sex():
     rand = uniform(0, 1)
     if rand < 0.52:
         return 'Female'
-    elif rand < 0.99989:
-        return 'Male'
     else:
-        return 'Unknown'
+        return 'Male'
 
 
 def random_marital_status(admit_type):
@@ -194,7 +200,7 @@ def random_demographic():
     return {
         'height': random_height(sex),
         'weight': random_weight(sex),
-        'dob': random_dob(admit_type),
+        'dob': random_dob_no_future(admit_type),
         'admit_source': random_admit_source(admit_type),
         'admit_type': admit_type,
         'provider_name': random_provider_name(),
