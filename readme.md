@@ -4,4 +4,6 @@
 
 # Usage
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+> **Note:** You must be *logged* in to Docker Cloud for the button to work correctly. If you are not logged in, you’ll see a 404 error instead.
+
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
