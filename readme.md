@@ -1,10 +1,6 @@
-<p align="center">
-  <a href="https://github.com/pennsignals/fuzzy-engine"><img src="https://cdn.rawgit.com/pennsignals/fuzzy-engine/master/assets/title.svg" width="200" alt="fuzzy"></a>
-</p>
+[![Build Status](https://travis-ci.org/pennsignals/fuzzy-engine.svg?style=flat-square)](https://travis-ci.org/pennsignals/fuzzy-engine)
 
-<p align="center">
-  <a href="https://travis-ci.org/pennsignals/fuzzy-engine"><img src="https://img.shields.io/travis/pennsignals/fuzzy-engine.svg?style=flat-square" alt="Build Status"></a>
-</p>
+`fuzzy-engine` is a mock web service that returns JSON formatted HTTP responses containing randomized patient data. This web service is for the ["Real-time Meatspace Data Science"](https://github.com/pennsignals/data-intelligence) presentation given by [Jason Walsh](https://github.com/rightlag) and [Michael Becker](https://github.com/mdbecker) for the [Data Intelligence Conference](http://data-intelligence.ai/) hosted by Capital One.
 
 # Usage
 
